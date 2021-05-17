@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Login / Sign up</title>
+  </head>
+  <body>
+      <section class="container">
+        <div class="box1">
+          <h2 class="signup-text">sign up</h2>
+          <div class="sign">
+            <div class="signup">
+              <form action="form.php" name="form" method="POST" class="form" onsubmit="return check()">
+               <div>
+                <i class="fas fa-user icon-user"></i>
+                <input type="text" class="inp-1" placeholder="Username" />
+               </div>            
+                <p class="m1"></p>
+                <div>
+                  <i class="fas fa-envelope icon-email"></i>
+                  <input type="email" class="inp-2" placeholder="Example@gmail.com" />
+                </div>
+                <p class="m2"></p>
+                <div>
+                  <i class="fas fa-lock icon-password"></i>
+                  <input type="password" maxlength="15" class="inp-3" placeholder="Password" />
+                </div>         
+                <p class="m3"></p>
+              <button type="submit" class="btn-signup">Continue</button>
+              </form>      
+            </div>
+            <div class="login-box">
+              <h5 type="button" class="login-text">or Login</h5>
+            </div>
+          </div>
+        </div>
+    
+          <div class="box2">
+            <h2 class="signup-text">Login</h2>   
+              <div class="signup">
+                <form action="form.php" name="form2" class="form2" method="POST" onsubmit="return checkLogin()">
+                  <div>
+                    <i class="fas fa-envelope icon-email"></i>
+                    <input type="email" class="inplog-1" placeholder="Email" />
+                  </div>
+                  <p class="mlog1"></p>
+                  <div>
+                    <i class="fas fa-lock icon-password"></i>
+                    <input type="password" class="inplog-2" placeholder="Password" />
+                  </div>
+                  <p class="mlog2"></p>
+                  <button type="submit" class="btn-signup">Login</button>
+                </form>
+              </div>
+              <div class="forgot">
+                <h5 class="passforgot">Forgot Password !</h5>
+                <h5 class="signinlog">Create Account</h5>
+              </div>
+          </div>
+
+          <div class="box3">
+            <h3 class="signup-text forgot-text">Forgot Password</h3>   
+              <div class="forgotForm">          
+                <form action="form.php" name="form2" class="form2" method="POST" onsubmit="return forgot()">
+                  <h6>Please Enter Youe Email For Reset Password.</h6>
+                  <div style="background-color: pink;margin-bottom: .5rem;margin-top: 1rem;">
+                    <i class="fas fa-envelope icon-email"></i>
+                    <input type="email" class="inpforgot" placeholder="Email" />
+                  </div>
+                  <p class="mforgot" style="padding-left: 75px;margin-top: -7px;"></p>
+                  <button type="submit" class="btn-signup forgot-btn">Continue</button>
+                </form>
+              </div>
+              <div class="goNext">
+                <h5 class="goLogin">Login</h5>
+                <span class="gospan">/</span>
+                <h5 class="goSignup">Signup</h5>
+              </div>
+          </div>
+      </section>
+  </body>
+  <script src="js.js"></script>
+</html>
